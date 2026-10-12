@@ -199,7 +199,7 @@ function speakCurrent() {
     part += 1;
     if (part >= parts.length) {
       idx += 1;
-      if (idx >= items.length) { finish(); return; }
+      if (idx >= items.length) idx = 0;
       loadParts();
       mark();
     }
@@ -273,7 +273,7 @@ document.addEventListener("visibilitychange", () => {
 });
 paintRate();
 mark();
-document.getElementById("hint").textContent = "Open this in Safari. Play reads each term, then your notes under it. 1× and 2× set the speed. The page remembers where you stopped.";
+document.getElementById("hint").textContent = "Open this in Safari. Play reads each term, then your notes under it, and starts again at the top when it finishes. 1× and 2× set the speed. The page remembers where you stopped.";
 </script>
 </body>
 </html>
