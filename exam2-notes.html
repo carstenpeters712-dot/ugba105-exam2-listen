@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="robots" content="noindex">
+<title>Leading People 105 · Exam 2 notes</title>
+<style>
+  :root {
+    --ink: #1c1915;
+    --muted: #5c564c;
+    --paper: #f4f0e8;
+    --card: #fffdf8;
+    --line: #e4dccf;
+    --blue: #0b3a6e;
+    --now: #e7eef8;
+    --gold: #8a5a12;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--paper); color: var(--ink); }
+  body {
+    font: 19px/1.45 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    padding-bottom: calc(92px + env(safe-area-inset-bottom));
+  }
+  header {
+    position: sticky; top: 0; z-index: 2;
+    background: var(--blue); color: white;
+    padding: calc(10px + env(safe-area-inset-top)) 16px 12px;
+  }
+  header h1 { margin: 0; font-size: 20px; font-weight: 700; }
+  header p { margin: 2px 0 0; font-size: 13px; opacity: .85; }
+  main { max-width: 720px; margin: 0 auto; padding: 8px 14px 24px; }
+  .line {
+    margin: 0 0 8px;
+    padding: 10px 12px;
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    white-space: pre-wrap;
+  }
+  .on {
+    background: var(--now);
+    border-color: #9bb4d6;
+    box-shadow: inset 3px 0 0 var(--blue);
+  }
+  footer {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 3;
+    display: flex; gap: 8px; align-items: center;
+    padding: 10px 12px calc(10px + env(safe-area-inset-bottom));
+    background: white;
+    border-top: 1px solid var(--line);
+  }
+  button {
+    font: 600 16px/1 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    border: 0; border-radius: 999px;
+    padding: 12px 16px;
+    background: var(--blue); color: white;
+  }
+  button.ghost { background: #efeae2; color: var(--ink); }
+  button.pick { outline: 2px solid var(--gold); }
+  #prog { margin-left: auto; font-size: 13px; color: var(--muted); white-space: nowrap; }
+  .hint { font-size: 13px; color: var(--muted); margin: 8px 2px 16px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Exam 2 notes</h1>
+  <p>Leading People 105 · the doc, line by line · tap a line to start there</p>
+</header>
+<main id="doc"></main>
+<p class="hint" id="hint"></p>
+<footer>
+  <button id="play" type="button">Play</button>
+  <button id="r1" class="ghost pick" type="button">1×</button>
+  <button id="r2" class="ghost" type="button">2×</button>
+  <span id="prog"></span>
+</footer>
+<script id="notes" type="application/json">
+["Exam 2", "Week 5", "-The Hidden Traps in Decision Making : HBS article Hammond", "argues bad executive decisions often come from shortcuts (heuristics) that work most of the time and fail invisibly when the stakes are high", "the defense is awareness plus a few built-in checks (the way pilots use instruments instead of trusting how far a landmark looks)", "Anchoring - the first number or impression gets too much weight", "Ie. A landlord’s opening lease terms pull the tenant’s counteroffer toward that frame", "Defense : think the problem through from first principles, try different starting points, and tell advisers as little as possible about your own estimate so they do not echo it", "Negotiation : set your position before you hear theirs", "Status quo - People prefer the current state because changing it means taking responsibility and risking regret", "Experiments show people keep a randomly assigned gift even when swapping is free – more alternatives make the default even stickier", "Defense ", "choose the current path if it were not already the default", "do not treat “hard to pick among better options” as a reason to stay put", "Sunk cost - Past money, time, or reputation gets treated as a reason to continue", "Ie. Bankers who originated bad loans kept advancing more funds; bankers who inherited the accounts did not. The fix used by one bank was to reassign a troubled loan the moment it went bad.", "1) Reward the quality of the decision given what was known at the time 2) remember Buffett: when you are in a hole, stop digging", "Confirming evidence - People decide what they want, then look for reasons", "Ie. Both supporters and opponents of capital punishment read the same pair of studies and came out more convinced of their original view.", "Defense", "Have someone argue the other side", "Write the three strongest reasons to do something else", "Stop asking advisers questions that only invite agreement", "Framing - The same facts, worded as gains or as losses, produce opposite choices", "Ie. Insurance adjusters preferred a sure save of one barge when the problem was framed as cargo saved, and a gamble when the identical math was framed as cargo lost", "Ie. New Jersey and Pennsylvania offered drivers the same limited right to sue; the state that made the limited right the default got about 80% uptake, the other about 25% — a gap the authors put at roughly $200 million", "Defense", "Restate the problem in both gain and loss language", "Restate with more than one reference point", "Estimating and Forecasting Common Communicating Errors : ", "Recallability : vivid events (plane crashes, huge jury awards, a friend’s illness) feel more likely than they are. Use base rates, not the story that sticks", "Overconfidence in guesses/estimates → assume/plan around too narrow a range of possibilities", "Experiement : asked ppl to choose DOW closing high and low that 1% chance it fell outside , ppl lost 20-30% of time , could have just picked wider bracket", "Biz ex. In a business decision that looks like this: you say a new product will sell 80,000 to 100,000 units, and you plan as if anything outside that is basically impossible. The real range might be 40,000 to 160,000.", "Defense :", "Start at the edges / divergent thinking", "Write the lowest plausible number and the highest, then ask: what would have to happen for the truth to be even lower, or even higher? Widen the range until you cannot easily invent that story", "Prudence - afraid of being wrong that you nudge the number “just to be safe,” and then someone else nudges it again in the same direction", "Ie automaker. Market planning asked other departments for forecasts: expected sales, dealer inventory, what competitors would do, costs. Each department knew the number would be used to decide production, so each one shaded its forecast toward building more cars, to be safe. Market planning took those already-padded numbers as if they were honest, then padded them again, also to be safe. The factory built far more cars than people bought. It took six months to sell the extras, and they had to discount them", "Fix", "ask for the number you actually believe (explicit for them to not build a safety cushion in)", "tell the people giving you numbers that you will not punish them for an honest figure", "Conclusion ", "traps reinforce each other", "Ie. A first impression anchors you, confirming evidence justifies it, the choice becomes the new status quo, and sunk costs make it harder to leave.", "Complex, high-stakes decisions are the most exposed because they rest on the most assumptions and the most other people’s estimates", "Put mechanisms in place to account for these distortions", "9/23 Slides : Motivation", "Extrinsic motivation", "Driven by external consequences separate from the activity itself.", "Goal: Earn rewards or avoid punishment", "• Focus: External outcomes (pay, praise, grades)", "• Driver: Instrumental task completion", "Intrinsic motivation", "Driven by the inherent satisfaction of performing the activity", "Goal: Personal growth, identity, enjoyment", "• Focus: Sense of accomplishment & alignment", "• Driver: Core values, interest, and identity", "Extrinsic motivation", "Related to Expectancy theory : ", "Valence - Do I want this outcome?", "Instrumentality - If I perform well, will I get it?", "Expectancy - If I try hard, can I perform well?", "Dangers", "Does the minimum to get carrots/avoid sticks", "Try to game the system for ^", "Creativity + Innovation Catalyst", "MOi: Positively associated with creative/innovative performance", "MOe: Complex relationship*", "Hydraulic Crowding-Out Effect", "Increasing extrinsic rewards can undermine and diminish pre-existing intrinsic passion", "Extrinsic and intrinsic motivators are NOT additive", "A lens : how the work FEELS to the employee / subjective meaning from employee’s perspective", "Origin mindset:", "“I am the cause of this. I chose what to do and how to do it.”", "→ intrinsic motivation", "Pawn mindset", "“Something outside me is the cause. A boss, a bonus, a rule, or a threat is moving me.”", "→ extrinsic motivation", "“To the extent that”  - this is a dial - not binary", "The more the job feels like your own, the stronger the intrinsic motivation. The more it feels like someone else is pushing you, the more the motivation is extrinsic.", "Teresa Amibale’s Caveat (distinction between good/bad extrinsic motivation)", "Controlling / non-synergistic - dictate how + why task much be done", "Ie. rigid evaluations , strict reward contingencies", "→ stifle the ideation/creativity phase", "Synergistic / enabling -", "offer resources , recognize competence , clear blockers", "Ie. supportive feedback , tools given , clear milestones", "→ enhance creativity by supporting intrinsic drive", "Iconoclasts show - Bill Russel and Samuel L Jackson", "B Russel was role model to Sam , inspired him to think he could be on tv and entertainment", "B didn’t want to shoot hoops bc thought of it as was his job – they both loved golf so did that", "Probably he loved basketball at some point – extrinsic motivators could have killed it", "Work Preferences Inventory - WPI - how researchers measure intrinsic vs. extrinsic motivation in a job setting (ppl rate these about themselves)", "Intrinsic. I enjoy", "new problems ", "complexity", "More difficult problems", "Important to express self ", "Curiosity drives much of what i do ", "Extrinsic. I think about ", "Income goals", "Money", "Promotion goals", "Recognition", "(EARLY 20th century) Scientific Management (Taylor, Gilbreth)", "Time and Motion studies", "Using stopwatch to watch how long tasks take , setting standard times , removing unnecessary actions + reducing physical strain", "Job simplification - complex workflows → repeatable tasks BC less thinking - more output efficiency", "Job specialization - narrowing scope to maximize task speed", "(MId-20th century) Organizational assumptions (Douglass McGregor MIT) : ", "Theory X - ppl lazy + want to do little as possible → must be coerced through extrinsic motivators (monitoring , threats)", " \t Y - ppl seek responsibility + positive impact on the world → can be motivated w/ intrinsic (ppl seek pride when provided good job design + autonomy)", "Hackman and Oldham model for intrinsically motivating jobs", "1) Experienced meaningfulness", "Diverse skill variety", "Task identity (whole pieces of work)", "Task significance (substantial impact on others)", "→", "2) Experienced Responsibility / Autonomy", "Discretion on scheduling and procedures", "3) Knowledge of results", "Direct+clear information about performance effectiveness", "Ie. measured ppl getting donations for student scholarships study : knowing the results that ended up from their work biggest signal on better performance", "Some tools", "Direct line-of-sight to beneficiary of your work", "Feeling that YOUR UNIQUE SKILLS make a difference", "Self-determination theory (Deci and Ryan)", "1) Competence", "Self-efficacy - feel able to master tasks", "Continuous learning + accomplishment", "2) Autonomy", "Experience internal locus of control", "Discretion over execution/methods/timing", "3) Relatedness ", "Social bonds in the community", "Meaningful team objectives", "Kass’s total integrated system for intrinsic motivation", "Meaningfulness / Purpose", "Competence", "Autonomy and Control", "Seeing your impact", "Relatedness", "Implications + Caveats : ", "Employee Perceptions", "Negative affectivity - a person’s baseline tilt toward stress and threat", "→ The same autonomy can feel like freedom to one person and like exposure to another", "Social information processing - peer opinions shape individual job perception", "GNS (Growth Need Strength) - how much someone wants challenge, learning, and stretch", "Ie. Low → experience anxiety in autonomy", "KSAs - Knowledge Skills Abilities", "autonomy without the knowledge, skills, and abilities to use it is a setup for failure", "Equity theory ", "Job gets more complex → the person’s inputs go up(more skill, more effort, more responsibility) → expect outcomes to move too(pay, recognition, or other rewards)", "If not then feels unfair", "Week 6", "-9/28 class : Decision-making (no slides)", "Carter Racing Problem", "To Race : new turbocharger → top 5 in 12/24 races , can secure big sponsorship if get top 5 , withdrawing would put them in debt and team may go under", "Not to race : in 7/24 races the engine failed , they have not identified the issue", "Answer : do not anchor on incomplete data , ask for data on when the engine did not fail to determine if it will → the temperature below 40 means that it will fail", "-9/30 : Decision-making debrief", " Decision-making vs. problem-solving", "Problem solving - identifying a perceived gap between current reality and a preferred future state", "diagnosis and root-cause identification", "Frames the gap to solve", "Decision-making - choosing and committing concrete resources (time, capital, headcount) to a chosen path or given option.", "Focuses on action and resource allocation.", "Commits capital, time, and human effort", "Connection : continuously problem solving → decision-making", "Assuming 1) perfect rationality 2) complete information → Classical / rational economic model", "Identify problem", "(the gap between now and future clearly)", "Identify criteria", "Weight criteria", "(objective)", "List all options", "Assess outcomes/consequences", "Optimal choice", "(maximize satisfaction)", "Where this breaks", "Assumes ppl don’t have mental fatigue + have infinite time to decide", "Assumes perfect information / probabilities / costs", "Assumes judgement free from ego/social dynamics/stress/psychological bias", "Bc ^ , being rational is not feasible → we satisfice (selecting options that are good enough rather than searching for absolute perfection) → this is bounded rationality ", "Bounded rationality- idea that human decision-making is limited by available information, cognitive capacity, and time", "Thinking fast and slow -Daniel Kahneman", "System 1", "Fast - automatic - unconscious - effortless - associative/heuristics", "System 2", "Slow - methodical - conscious - effortful - logical/rule-based", "Heuristic - ignores part of the information in order to make decisions more 1) quickly 2) frugally(in mental effort) 3) accurately than complex methods", "Double-edged sword : they create predictable errors in the certain contexts (biases)", "Research : 180+ logged cognitive biases → practical for leaders to master a few core ones", "Anchor bias - tendency to rely heavily on an initial piece of information (the \"anchor\") when making estimates or choices—even when the anchor is completely arbitrary or irrelevant", "Insufficient adjustment - final judgment tends to end closer to the starting point than logically should", "Experiment : writing digits of ur phone number predicts if you over or under estimate the # of faculty — bc if phone digits are high or low", "People who are", "focused on what they might gain (positively framed) tend to be risk averse ", "focused on what they might lose (negatively framed) tend to be risk seeking", "Ie. layoff problem → ppl more likely to go w/ 6000 jobs saved at ⅓ probability", "Availability bias - assume that easily imaginable events are more likely to happen and to be true", "Implication : enhanced by repetition, experienced emotions, and “closeness.”", "Ex. many more ppl killed a year by stomach cancer but ppl tend to think car accidents", "Sunk cost effect - tend to hold on to costs we have already incurred", "sunk when it cannot be recovered.", "Once a cost is sunk, it has no effect on the incremental payoffs of future decisions, and therefore plays no role in rational choice.", "Ie. buy sandwich , halfway through - don’t like it and not hungry , eat it to get money’s worth", "Confirmation/Primary bias -  tend to look for evidence supporting what we expect or hope to be true", "→ selective search", "→ biased evaluation", "(trusting favorable facts , scrutinizing contradicting ones)", "Experiment : ", "Claim : \"he predicts rise, it rises\" → this not true if \"predicts rise , it falls” so flip those", "→ need to flip over the options that have the possibility of making the claim false", "Inattentional blindness / change blindness / selective attention - you miss something obvious because your attention is already taken by another task", "Ie. looking for how many times ball passed and miss the gorilla", "Positive cognitive illusions - tendency to overestimate favorable outcomes, self-standing, and control over complex external events.", "Study : ~70% of ppl rate themselves above average (only 49.99% can by definition be above average)", "-Claudia notes", "Behave in ways that maximize our utility", "Condomn and Spursky", "Always make the same kind of mistake = fixable", "Week 7", "-Readings", "Socialization - ch.10 George and Jones", "a group controls newcomers by how it teaches them the roles, rules, and norms, and that teaching style decides whether people copy the current way or treat it as changeable", "Socialization - process by which newcomers learn the roles, rules, and norms of a group is socialization", "→ may view bad habits ", "→ may view things veteran able to do but they cannot yet", "2 outcomes", "institutionalized role orientation - newcomers are taught to respond to situations in the same way that existing group members respond to similar situation", "Role taking > role making", "individualized role orientation - individuals are taught that it is acceptable and desirable to be creative and to experiment with changing how the group does things", "realize that these ways of controlling behavior are not cast in stone and that the group will consider changing them if a more effective way of behaving is identified", "Role making > role taking", "| Institutionalized | Individualized || Collective: one shared training | Individual: each person taught separately || Formal: separated from the group while learning | Informal: learn on the job beside members || Sequential: the order of new behaviors is set | Random: the order follows the person || Fixed: the timetable is set | Variable: the pace depends on the person || Serial: veterans teach the newcomer | Disjunctive: the newcomer finds their own way || Divestiture: harsh treatment until they conform | Investiture: welcomed and supported immediately |Military and Disney", "Goal : sameness\t\t\t\t  marketing, research and              \t\t\t\t\t\t  development, and \t\t\t\t\t\t\t                self-managed teams", "\t\t\t\t\t\t Goal : keeps changing", "Ie. Microsoft", "work group - people who interact and see a shared goal", "5 stages of group development (Tuckman) : ", "Forming. Members meet, learn the task, and figure out who is in the group. Behavior is polite and cautious. Roles and goals are still unclear, so people look to a leader for direction.", "Storming. Conflict shows up. Members disagree about goals, roles, and who has influence, and they push their own ideas. Many groups stall here.", "Norming. The group settles those fights enough to agree on roles, rules, and norms. Cohesion rises, and members accept how they will work together.", "Performing. The agreement is in place, so effort goes to the task. Members coordinate and do the work the group was formed to do.", "Adjourning. The group finishes and breaks up. Members complete what is left and separate. This stage matters most for temporary groups, such as a task force.", "role - a set of behaviors or tasks that a person is expected to perform by virtue of hold-ing a position in a group or organization", "-Effective teams - ch.11 George and Jones", "Effective group - actual performance stays close to its potential and that potential keeps rising", "Process losses pull actual performance below that, through coordination problems and motivation problems", "Synergy - the gain that shows up when people working together produce more than the same people would produce separately.", "Social loafing - doing less in a group than you would alone", "Bc 1) individual effort cannot be seen 2) person decides their effort does not matter", "→ sucker effect: others cut back so they are not the ones carrying the group. Loafing gets worse as the group gets bigger", "Solutions : 1) make individual contributions identifiable 2) each person believe their contribution necessary 3) keep group small as can", "Task interdependence is how much one member’s work affects the others", "Pooled - Each person contributes separately, and group output is the sum", "Waiters , sales", "Sequential -  Work must happen in a set order", "Assembly line", "Implications : slowest or weakest person sets the pace, and an early mistake hits everyone later", "→ group ppl of similar ability", "→ paying for the group’s output so members police each other", "Reciprocal - Everyone depends on everyone else at once", "Research team , top management ", "Losses are highest because no one’s separate contribution is clear and the order of work is not fixed", "Synergy also highest", "→ build norm of helping", "→ keep team small as possible", "Group cohesiveness - how attractive the group is to its members", "5 things : ", "smaller size (about 3 to 15)", "similarity among members", "competition with other groups", "exclusiveness - meaning membership is hard to earn", "diversity can still help cohesiveness when the different skills are what let the group succeed. Too much competition between groups turns into sabotage", "Self-managed work team. Members decide how to do the work, including goals and task assignments. It works when the work is complex and ends in a finished product, managers actually give up control and stay available as coaches, members are chosen for the right skills, and they want the responsibility. AT&T Credit collapsed a sequence of credit steps into teams, and applications were processed faster and in greater number.", "skunk works is an R&D team pulled out of the normal organization so it can work intensely without everyday interruptions", "Ford’s Mustang skunk works developed the car for about $700 million, below the $1 billion estimate, and in 25 percent less time than usual, because the people closest to the problems could decide", "Virtual teams - Members are often less satisfied, and cohesiveness is often lower", "-Slides : Teams 2", "Cohesion drivers : ", "Group size", "• Required interaction patterns (Frequency & Intensity)", "• Success", "• Homogeneity (opposite of diversity)", "• External threat", "• Difficulty of membership", "• Reward system", "• (Precondition: Stability)", "Diversity improves performance, particularly on tasks with cognitive, problem-solving, or creative elements", "can lead to increased stress, dysfunctional conflict", "Problem drivers", "Similar to me effect - ", "→ changing salient identities and characteristics", "Cross-cultural mis-communication", "→ psychological safety", "Stereotyping/bias", "Key to diversity : Perceived similarity & Shared identity , Cross-cultural awareness , Communication & conflict skills , Reduce stereotypes/schemas", "Working agreements explicitly set out the team norms", "Punctuated Equilibrium (Tuckman 5 development for deadline-driven teams)", "Start. The first meeting locks in an approach. The team then works that way with little real change.", "Midpoint transition. About halfway to the deadline, the team sees that time is half gone, drops or revises the first approach, and resets.", "Completion. After that reset, the team works in the new way until the deadline.", "Social motivation", "Social facilitation (Triplett) - positive - ", "Audience effect - people work faster when others are present", "Ie. cycling teams", "helps a task you already know how to do. On a hard or unfamiliar task, the same arousal gets in the way", "Social loafing (Ringelmann)  - negative", "had people pull a rope. Each person pulled less hard as the group got bigger (total less than the sum of parts)", "Free riding - perception one can get away w/ doing less", "→ individual accountability", "Sucker effect - don’t want to be taken advantage of / carry the group ", "Stopping Social Loafing", "Identifiable", "Individual performance measured", "• Smaller team size", "• Proximity", "• Specialization", "Perceived indispensibility", "Tie it to what they uniquely contribute to the group", "So that no one takes advantage of others by free riding → trust", "Calculative trust - Belief others are extrinsically motivated to contribute their fair share.", "Anything that reduces free riding", "Affective trust - Belief others are intrinsically motivated to contribute their fair share.", "Anything that causes others to like and care about one another more.", "Getting to know one another better* (as long as they discover others are trustworthy).", "-Updated slides", "Norm Enforcer - highly cohesive groups rigorously enforce shared norms and behavioral rules", "Cohesion 4 components : ", "Task cohesion", "Social cohesion", "Group morale", "loyalty", "Shared identity", "Identity", "High cohesion", "→ ppl want to satisfy teammates", "→ do not want to be rejected / non-conform", "Low cohesion", "→ apathy to teammates satisfaction", "→ do not care ab adhering to norms", "Group creates performance norm (aiming for an A B C-) → working far above/below this norm feels inappropriate", "Stability : Precondition: Member longevity and low turnover", "Implication", "High cohesive , high norms → best team", "High \t\t  low   \t\t→ worst team", "Diversity", "Improves cognitive and complex task outcomes", "Creative Problem-Solving, Innovation, and Prevents Groupthink", "Cons", "Can increase stress and lower cohesion ", "Similar to me effect - ", "→ changing salient identities and characteristics", "→ Reframing group identity around shared superordinate goals rather than demographic or functional differences.", "Cross-cultural mis-communication", "→ psychological safety", "Stereotyping/bias", "→ clear, transparent performance data ", "→ increasing structured inter-member interactions to dismantle assumptions.", "-Monday slides", "Highly cohesive groups follow the norms", "Morale - Loyalty to group and its members", "High cohesiveness , bad norms", "If you value membership highly, you want to make your teammates happy AND you want to avoid displeasing them (e.g., Mean Girls)", "-Wednesday slides", "-Escalation of commitment slides", "A great decision is not off outcome , is off process (best you can do given what you know)", "Escalation of commitment - inappropriately continuing to invest (time, capital, effort) into a demonstrably losing course of action", "Stages", "Initial commitment ", "prior decision to commit", "Situation not pay off as expected", "Temptation to continue investment to justify prior losses", "Experiment ", "Bids in 50 cent increments , bidding for 10 dollars ", "If 2nd highest bidder then pay the bid and get nothing", "→ Once the bids pass $10, the leader still loses less by going 50 cents higher than by dropping out and paying their last bid for nothing. Bidding often ends well above the value of the bill.", "Remedies to escalation commitment", "Set loss limit beforehand", "Create decision points to change course of action", "(realize smart ppl can make bad choices bc non-perfect information + to disconnect ego and the decision)", "Imagine what you would do if it were a “new” project", "Have others critically review the project history", "Devil’s advocate", "Pre-Mortem", "“What are all the things that could possibly go wrong in this project?” (poor framing) → Imagine it’s 6 months from now and the project failed. Why did it fail? What went wrong? Write out the story if stuck.", "Red teaming", "independent group acts as an adversary to test an organization's defenses, strategies, or systems", "Let Sunk Costs Go; look for framing effects", "Resulting - cognitive shortcut of equating the quality of a decision directly with the quality of its outcome", "Truth : luck and unexpected noise/variance break this link", "Ie. Superbowl interception Seahawks : pass there is interception less than 2% of the time, while saving a critical timeout → process was sound; the outcome was bad", "Life is poker - not chess", "Chess : perfect information , no luck", "Poker : imperfect information + luck on next cars flipped , can make mathematically correct decision and still lose", "A bet - choice made against an uncertain future state where resources (money, time, reputation, opportunity) are put at risk", "Leaders do not frame decisions as gambles → they instead prefer to project false absolute conviction", "I like Yash and Etan to frame as experiments instead", "Seeing life as bets", "→ uncouples ego / engenders seeing trade-offs probabilities objectivity", "→ see risk (opportunity cost , alternative scenarios)", "→ see unexpected outcomes as data , not personal failures", "Seeing temperature by engine breakdown unveils Carter Racing problem", "-From class notes", "Japanese manufacturing", "The \"Andon\" Cord: At Toyota, any single worker on the moving line had the power to pull a cord and stop the entire factory if they spotted a defect.", "Multi-Skilled Workers: Unlike Ford's system, Japanese \"lean manufacturing\" cross-trained workers so they could rotate jobs and understand multiple parts of the vehicle's manufacturing process.", "Volvo", "1 worker follows the car thru production", "Equity theory → Tool : if you get sales revenue up X  , will split Y % of it with you / Z bonus", "Pike’s market playfulness → great culture and customer service", "Self-determination theory (Deci and Ryan)", "1) Competence", "Self-efficacy - feel able to master tasks", "Continuous learning + accomplishment", "2) Autonomy", "Experience internal locus of control", "Discretion over execution/methods/timing", "3) Relatedness ", "Social bonds in the community", "Meaningful team objectives", "-Gaps on study guide", "The Motivating Potential Score formula is not written down. Your notes do list the five characteristics: skill variety, task identity, task significance, autonomy, and feedback.", "Illusion of control is only the line about overestimating control over complex events.", "The administrative model is not named. Your notes describe it as bounded rationality and satisficing.", "For cohesion and norms, your notes state the best cell (high cohesion, high norms) and the worst cell (high cohesion, low norms).", "Availability judges how likely something is by how easily an example comes to mind, like car accidents feeling more common than stomach cancer because the crash is easier to picture. ", "VS. ", "Representativeness judges by how closely something matches a stereotype or a typical case, and it ignores how common that case actually is.", "-Review Sheet Brainwasher"]
+</script>
+<script>
+const items = JSON.parse(document.getElementById("notes").textContent);
+const doc = document.getElementById("doc");
+const playBtn = document.getElementById("play");
+const prog = document.getElementById("prog");
+const r1 = document.getElementById("r1");
+const r2 = document.getElementById("r2");
+const blocks = [];
+items.forEach((text, i) => {
+  const el = document.createElement("p");
+  el.className = "line";
+  el.textContent = text;
+  el.addEventListener("click", () => jump(i));
+  doc.appendChild(el);
+  blocks.push(el);
+});
+
+const storeKey = "lp105-exam2-notes-idx";
+const rateKey = "lp105-exam2-notes-rate";
+let idx = Number(localStorage.getItem(storeKey) || 0);
+if (!Number.isFinite(idx) || idx < 0 || idx >= items.length) idx = 0;
+let part = 0;
+let parts = [];
+let playing = false;
+let rate = Number(localStorage.getItem(rateKey) || 1);
+if (rate !== 2) rate = 1;
+let token = 0;
+let lock = null;
+
+function speakable(s) {
+  return s
+    .replace(/^\s*[-–—]\s*/, "")
+    .replace(/\bIe\.?/g, "For example")
+    .replace(/\bie\.?/g, "for example")
+    .replace(/\bppl\b/gi, "people")
+    .replace(/\bBC\b/g, "because")
+    .replace(/\bbc\b/g, "because")
+    .replace(/\bw\//g, "with ")
+    .replace(/→/g, ". ")
+    .replace(/\|+/g, ". ")
+    .replace(/~/g, "about ")
+    .replace(/#/g, " number ")
+    .replace(/⅓/g, " one third ")
+    .replace(/½/g, " one half ")
+    .replace(/•/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+function chunk(s) {
+  const out = [];
+  let cur = "";
+  const words = s.split(" ");
+  for (let i = 0; i < words.length; i++) {
+    const w = words[i];
+    const next = cur ? cur + " " + w : w;
+    const end = /[.!?]$/.test(w);
+    if (next.length > 190 && cur) {
+      out.push(cur);
+      cur = w;
+    } else {
+      cur = next;
+    }
+    if (end && cur.length > 40) {
+      out.push(cur);
+      cur = "";
+    }
+  }
+  if (cur) out.push(cur);
+  return out.length ? out : [s];
+}
+function pickVoice() {
+  const voices = speechSynthesis.getVoices();
+  return voices.find(v => /en-US/i.test(v.lang) && /samantha|aaron|nicky|google/i.test(v.name))
+    || voices.find(v => /^en/i.test(v.lang));
+}
+function mark() {
+  blocks.forEach(el => el.classList.remove("on"));
+  const el = blocks[idx];
+  if (!el) return;
+  el.classList.add("on");
+  el.scrollIntoView({ block: "center", behavior: "smooth" });
+  prog.textContent = (idx + 1) + " / " + items.length;
+  localStorage.setItem(storeKey, String(idx));
+}
+function paintRate() {
+  r1.classList.toggle("pick", rate === 1);
+  r2.classList.toggle("pick", rate === 2);
+  localStorage.setItem(rateKey, String(rate));
+}
+function loadParts() {
+  parts = chunk(speakable(items[idx]));
+  part = 0;
+}
+async function wake() {
+  try {
+    if (navigator.wakeLock) lock = await navigator.wakeLock.request("screen");
+  } catch (e) {}
+}
+function finish() {
+  playing = false;
+  playBtn.textContent = "Play";
+  token++;
+  if (idx >= items.length) idx = 0;
+  mark();
+}
+function speakCurrent() {
+  const my = ++token;
+  if (!parts[part]) { finish(); return; }
+  const u = new SpeechSynthesisUtterance(parts[part]);
+  u.rate = rate;
+  u.lang = "en-US";
+  const v = pickVoice();
+  if (v) u.voice = v;
+  const advance = () => {
+    if (my !== token || !playing) return;
+    part += 1;
+    if (part >= parts.length) {
+      idx += 1;
+      if (idx >= items.length) { finish(); return; }
+      loadParts();
+      mark();
+    }
+    speakCurrent();
+  };
+  u.onend = advance;
+  u.onerror = (e) => {
+    const err = e && e.error;
+    if (err === "interrupted" || err === "canceled" || err === "cancelled") return;
+    advance();
+  };
+  speechSynthesis.speak(u);
+}
+function play() {
+  if (idx >= items.length) idx = 0;
+  if (!parts.length || part >= parts.length) loadParts();
+  playing = true;
+  playBtn.textContent = "Pause";
+  mark();
+  wake();
+  speakCurrent();
+}
+function pause() {
+  playing = false;
+  token++;
+  playBtn.textContent = "Play";
+  speechSynthesis.cancel();
+}
+function jump(i) {
+  const was = playing;
+  pause();
+  idx = i;
+  loadParts();
+  mark();
+  if (was) play();
+}
+playBtn.addEventListener("click", () => {
+  if (playing) pause();
+  else play();
+});
+function setRate(n) {
+  rate = n;
+  paintRate();
+  if (!playing) return;
+  const wasPart = part;
+  pause();
+  part = wasPart;
+  play();
+}
+r1.addEventListener("click", () => setRate(1));
+r2.addEventListener("click", () => setRate(2));
+speechSynthesis.getVoices();
+window.speechSynthesis.onvoiceschanged = () => speechSynthesis.getVoices();
+if (/iPhone|iPad|iPod/.test(navigator.userAgent)) {
+  setInterval(() => {
+    if (!playing || !speechSynthesis.speaking) return;
+    speechSynthesis.pause();
+    speechSynthesis.resume();
+  }, 10000);
+}
+document.addEventListener("visibilitychange", () => {
+  if (document.visibilityState === "visible" && playing) wake();
+});
+paintRate();
+mark();
+document.getElementById("hint").textContent = "Open this in Safari. Play reads the Exam 2 section of your notes, one line at a time. 1× and 2× set the speed. The page remembers where you stopped.";
+</script>
+</body>
+</html>
